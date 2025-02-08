@@ -1,0 +1,37 @@
+.home-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #d84e55;
+    color: white;
+    padding: 10px;
+}
+
+.search-section {
+    margin: 20px;
+}
+
+.search-section input {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-section button {
+    background-color: #d84e55;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
