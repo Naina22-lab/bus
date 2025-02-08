@@ -15,7 +15,6 @@ const Home = () => {
 
   return (
     <div className="app">
-      {/* Navbar */}
       <header className="navbar">
         <div className="navbar-content">
           <div className="navbar-left">
@@ -30,11 +29,9 @@ const Home = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
       <main className="hero-section">
         <h2>India's No. 1 Online Ticket Booking Site</h2>
 
-        {/* Search Section */}
         <div className="search-container">
           <div className="search-item">
             <label htmlFor="from">From</label>
@@ -78,7 +75,6 @@ const Home = () => {
         <button className="book-button" onClick={() => navigate('/busbook')}>Book Ticket</button>
       </main>
 
-      {/* Footer */}
       <footer className="footer">
         <p>Apno ko, Sapno ko Kareeb Laaye.</p>
       </footer>
