@@ -13,7 +13,7 @@ function Home() {
                 <button>Search Buses</button>
             </section>
             <footer className="footer">
-                <p>© 2025 RedBus Clone. All rights reserved.</p>
+                <p> TransitFlow: Smart Public Transport Dashboard. All rights reserved.</p>
             </footer>
         </div>
     );
