@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-import bus from '../assets/bus.jpeg';
+import Bus from '../assets/bus.jpeg';
 
 const cities = [
   "Mumbai", "Delhi", "Kolkata", "Chennai", "Bangalore",
@@ -18,7 +18,7 @@ const Home = () => {
       <header className="navbar">
         <div className="navbar-content">
           <div className="navbar-left">
-            <img src={bus} alt="TransitFlow Logo" className="logo" />
+            <img src={Bus} alt="TransitFlow Logo" className="logo" />
             <h1>Bus Tickets</h1>
           </div>
           <div className="navbar-right">
