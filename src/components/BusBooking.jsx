@@ -78,7 +78,7 @@ const BusBooking = () => {
             <p>Amenities: {bus.amenities.join(", ")}</p>
             <p style={{ fontSize: "14px", color: "gray" }}>Seats Available: {bus.seatsAvailable}</p>
             <button 
-              style={{ marginTop: "10px", width: "100%", padding: "10px", backgroundColor: "blue", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", fontSize: "16px" }}
+              style={{ marginTop: "10px", width: "100%", padding: "10px", backgroundColor: "red", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", fontSize: "16px" }}
               onClick={() => navigate(`/view-seats/${bus.id}`)}
             >
               View Seats
