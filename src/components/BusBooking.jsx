@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const cities = [
   "Mumbai", "Delhi", "Kolkata", "Chennai", "Bangalore", 
@@ -9,6 +10,7 @@ const busTypes = ["Seater", "Sleeper", "AC", "NonAC"];
 const amenities = ["Water Bottle", "Blankets", "Charging Point", "Toilet", "Bed Sheet"];
 
 const busData = cities.flatMap((fromCity) =>
+    
   cities
     .filter((toCity) => toCity !== fromCity)
     .slice(0, 2) 
@@ -33,6 +35,7 @@ const BusBooking = () => {
   const [selectedTo, setSelectedTo] = useState("");
   const [selectedBusType, setSelectedBusType] = useState("");
   const [selectedAmenity, setSelectedAmenity] = useState("");
+  const navigate = useNavigate();
 
   const filteredBuses = busData.filter(bus => 
     (!selectedFrom || bus.from === selectedFrom) &&
@@ -76,7 +79,7 @@ const BusBooking = () => {
             <p style={{ fontSize: "14px", color: "gray" }}>Seats Available: {bus.seatsAvailable}</p>
             <button 
               style={{ marginTop: "10px", width: "100%", padding: "10px", backgroundColor: "blue", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", fontSize: "16px" }}
-              onClick={() => setSelectedRoute(bus.id)}
+              onClick={() => navigate(`/view-seats/${bus.id}`)}
             >
               View Seats
             </button>
